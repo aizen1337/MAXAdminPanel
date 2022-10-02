@@ -1,0 +1,87 @@
+.newpage {
+    width:100%;
+    display: flex;
+    .newpageContainer {
+        flex: 6;
+        .top,
+        .bottom {
+            -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+            -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+            box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+            padding: 10px;
+            margin: 20px;
+            display: flex;
+            border-radius: 10px;
+            .title {
+                color: darkslategray;
+                font-size: 1.5em;
+            }
+            .left {
+                display: flex;
+                flex: 1;
+                text-align: center;
+                justify-content: center;
+                .image {
+                    width: 100%;
+                    aspect-ratio: 1 / 1;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+            .right {
+                flex: 2;
+                .alert {
+                    text-align: center;
+                    &.closed {
+                        display: none;
+                    }
+                }
+                form {
+                    justify-content: space-around;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 2em;
+                    font-size: larger;
+                    .formInput {
+                        width: 40%;
+                        .icon {
+                            font-size: 5em;
+                            cursor: pointer;
+                        }
+                        label {
+                            display: flex;
+                            align-self: center;
+                            gap: 15px;
+                        }
+                        input {
+                            width: 100%;
+                            padding: 1em;
+                            border: none;
+                            border-bottom: 1px dashed lightgray;
+                        }
+                    }
+                    button {
+                        margin-top: 5vh;
+                        width: 10vw;
+                        padding: 10px;
+                        border: none;
+                        color: lavenderblush;
+                        background-color: orangered;
+                        font-size: 1.25em;
+                        font-weight: 900;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        text-align: center;
+                        align-items: center;
+                        justify-content: center;
+                            &:disabled {
+                            background-color: crimson;
+                            cursor: not-allowed;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

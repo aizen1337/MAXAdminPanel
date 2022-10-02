@@ -1,0 +1,68 @@
+.navbar {
+    height: 5em;
+    border-bottom: 0.5px solid lightgray;
+    display: flex;
+    align-items: center;
+    .wrapper {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .search {
+            display: flex;
+            align-items: center;
+            padding: 1em;
+            border: 0.25px solid lightgrey;
+            border-radius: 1em;
+            input {
+                border: none;
+                outline: none;
+                cursor: pointer;
+                &::placeholder {
+                    font-size: 1.5em;
+                }
+                
+            }
+            &:hover {
+                border-color: orangered;
+                transition: .5s;
+            }
+        }
+        .items {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            .item {
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                &:hover {
+                    transition: .5s;
+                    background-color: rgba(0,0,0,0.25);
+                }
+            }
+            }
+            .avatar {
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                &:hover {
+                    transition: .5s;
+                    background-color: rgba(0,0,0,0.25);
+                }
+            }
+            .notificationCounter {
+                text-align: center;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                color: whitesmoke;
+                background-color: orangered;
+                margin-bottom: 10px;
+                font-weight: bolder;
+            }
+    }
+}

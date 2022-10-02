@@ -1,0 +1,73 @@
+.singlepage {
+    display: flex;
+    width: 100%;
+    .singlepagecontainer {
+        flex: 5;
+        .top {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            .left {
+                flex: 1;
+                padding: 20px;
+                -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+                -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+                box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+                position: relative;
+                border-radius: 20px;
+                .editButton {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 5px;
+                    font-size: 1.25em;
+                    border-radius: 0 0 0 5px;
+                    color: blue;
+                    background-color: rgb(52, 65, 248,0.2);
+                    cursor: pointer;
+                }
+                .item {
+                    display: flex;
+                    gap: 20px;
+                    .itemImg {
+                        width: 30%;
+                        aspect-ratio: 1 / 1;
+                        border-radius: 50%;
+                        object-fit: cover;
+
+                    }
+                    .details {
+                        .itemTitle {
+                            margin-bottom: 15px;
+                            color: darkslategray;
+                            .detailItem {
+                                margin-bottom:10px;
+                                font-size: 14px;
+                                .itemKey {
+                                    font-weight: bold;
+                                    color: gray;
+                                }
+                            }
+                        }
+                    }
+                }
+            } 
+            .right {
+                -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+                -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+                box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+                flex: 2;
+                border-radius: 20px;
+            }
+        }
+        .title {
+            font-size: 1.5em;
+            color: lightgray;
+            margin-bottom: 20px;
+        }
+        .bottom {
+            padding: 20px;
+            border-radius: 20px;
+        }
+    }
+}
